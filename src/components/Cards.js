@@ -12,7 +12,8 @@ function Cards( { image, name, gender, species, status} ){
             style={{ 
                 boxShadow:'2px 3px 69px 12px rgba(0,0,0,0.97)', 
                 backgroundColor:'rgba(255,255,255,0.7', 
-                borderRadius:'10px' }} sx={{ maxWidth: 345 }}>
+                borderRadius:'10px',
+                width:'50%' }} sx={{ maxWidth: 345 }}>
               <CardActionArea className='card-area'>
                 <CardMedia
                     style={{ backgroundColor:'white', padding:'3px', borderRadius:'10px', border:'2px solid black', backgroundSize:'cover'}}

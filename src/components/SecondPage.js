@@ -1,4 +1,3 @@
-import More from "./More"
 import * as React from 'react';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
@@ -6,6 +5,7 @@ import { useState } from 'react'
 import Cards from "./Cards";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Footer from "./Footer";
 
 
 function SecondPage(){
@@ -106,20 +106,22 @@ function SecondPage(){
     return(
         <div className="second-page">
 
+            <div className="specific-search">
+                <h2 style={{ color:'white', margin:'0 auto', marginTop:'5%' }}>Look for a specific character</h2>
+                <Box style={{ margin: '0 auto', marginTop:'5px', borderRadius:'10px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}
+                    component="form"
+                    sx={{
+                        '& > :not(style)': { m: 1, width: '25ch' },
+                    }}
+                    noValidate
+                    autoComplete="off"
+                    >
 
-            <h2 style={{ color:'white', margin:'0 auto', marginTop:'20px' }}>Look for a specific character</h2>
-            <Box style={{ margin: '0 auto', marginTop:'5px', borderRadius:'10px'}}
-                component="form"
-                sx={{
-                    '& > :not(style)': { m: 1, width: '25ch' },
-                }}
-                noValidate
-                autoComplete="off"
-                >
+                    <TextField onChange={handleChange} style={{ margin: '0 auto', backgroundColor:'rgba(255,255,255,0.7', color:'white', borderRadius:'10px' }} id="outlined-basic" label="Enter a character's name" variant="outlined" />
+                    <Button style={{ backgroundColor:'black', color:'white', border:'1px solid white', height:'50px', borderRadius:'10px' }} onClick={handleClick}>Search</Button>
+                </Box>
 
-                <TextField onChange={handleChange} style={{ margin: '0 auto', backgroundColor:'rgba(255,255,255,0.7', color:'white', borderRadius:'10px' }} id="outlined-basic" label="Enter a character's name" variant="outlined" />
-                <Button style={{ backgroundColor:'black', color:'white', border:'1px solid white', height:'50px', borderRadius:'10px' }} onClick={handleClick}>Search</Button>
-            </Box>
+            </div>
 
                 <div className="more-container">
                 <h1 style={{color:'white'}}>or</h1>
@@ -144,7 +146,7 @@ function SecondPage(){
                 <Button style={{ backgroundColor:'black', color:'white', border:'1px solid white' }} onClick={handleIncrement}>Next Page</Button>
                 <Button style={{ backgroundColor:'black', color:'white', border:'1px solid white' }} onClick={handleReturn}>Return to page 1</Button>
             </ButtonGroup>
-
+            <Footer />
         </div>
     )
 }
