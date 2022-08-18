@@ -1,9 +1,11 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 .Main {
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c20ccab6-a67e-472d-8bc1-b3e2864460a4/datwg8j-298e4dcb-e6a5-4a78-81fd-0c7db168ede4.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
-  display: flex;
+
 }
 .card-container{
   z-index: 1;
@@ -16,6 +18,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 30px;
+
 
 }
 
@@ -36,7 +39,6 @@ color: white;
   z-index: 1;
   color: white;
   margin: 0 auto;
-  margin-top: 200px;
   height: 500px;
   background-image: url('https://mystickermania.com/cdn/stickers/rick-and-morty/sticker_2060-512x512.png');
   size: cover;
@@ -44,4 +46,128 @@ color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
+  padding-bottom: 100px;
+  transition: all .2s ease-in-out; 
+}
+
+.card-background:hover{
+  z-index: 1;
+  color: white;
+  margin: 0 auto;
+  height: 500px;
+  background-image: url('https://media1.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif');
+  background-size: contain;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  padding-bottom: 100px;
+  transform: scale(1.2);
+}
+
+.carousel-main{
+  margin: 0 auto;
+  height: 97vh;
+  width: 600px;
+  box-shadow: 0px 23px 26px 1px rgba(0,0,0,0.43);
+}
+
+/* SECOND PAGE  */
+
+.second-page{
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-text{
+  color: white;
+}
+
+.more-container{
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.6);
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.mult-card{
+  margin: 10px;
+  margin-top: 50px;
+  width: 200px;
+  }
+.expand-more{
+  margin: 0 auto;
+}
+
+.button-group{
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.button-group2{
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.cardss-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+@media (max-width: 380px) {
+
+  .Main {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c20ccab6-a67e-472d-8bc1-b3e2864460a4/datwg8j-298e4dcb-e6a5-4a78-81fd-0c7db168ede4.jpg");
+    background-size: cover;
+    width: 100vh;
+    height: 100vh;
+  
+  }
+  .carousel-main{
+    margin: 0 auto;
+    height: 97vh;
+    width: 50vh;
+    box-shadow: 0px 23px 26px 1px rgba(0,0,0,0.43);
+  }
+  .card-background{
+    z-index: 1;
+    color: white;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url('https://mystickermania.com/cdn/stickers/rick-and-morty/sticker_2060-512x512.png');
+    size: cover;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding-bottom: 100px;
+    transition: all .2s ease-in-out; 
+  }
+  .card-container{
+    z-index: 1;
+    color: white;
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 400px;
+    width: 50vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+  
+  }
+  
 }

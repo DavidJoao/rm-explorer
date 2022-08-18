@@ -4,9 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import { borderRadius, padding } from '@mui/system';
 
-function Cards( { image, name, gender, species, status, location } ){
+function Cards( { image, name, gender, species, status} ){
     return(
         <div className='card-background'>
             <Card className='card-container' 
@@ -34,9 +33,6 @@ function Cards( { image, name, gender, species, status, location } ){
                   </Typography>
                   <Typography style={{color:'black', fontSize:'20px'}} variant="body2" color="text.secondary">
                     Status: {status}
-                  </Typography>
-                  <Typography style={{color:'black', fontSize:'20px'}} variant="body2" color="text.secondary">
-                    Location: {location}
                   </Typography>
                 </CardContent>
               </CardActionArea>
